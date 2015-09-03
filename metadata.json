@@ -1,0 +1,13 @@
+{
+    "name"         : "puppet-navencrypt",
+    "version"      : "0.0.1",
+    "author"       : "Sapan 'Soup' Shah <soup@immuta.com>",
+    "license"      : "Apache-2.0",
+    "summary"      : "This module takes care of installing Navencrypt."
+    "source"       : "Undefined for now",
+    "dependencies" : [
+        { "name" : "puppetlabs/stdlib",     "version_requirement" : ">= 4.5.1" },
+        { "name" : "puppetlabs/firewall",   "version_requirement" : ">= 1.4.0" },
+        { "name" : "spiette-selinux",       "version_requirement" : ">= 0.6.0" }
+    ]
+}

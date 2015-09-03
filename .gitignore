@@ -1,0 +1,8 @@
+.librarian/
+.tmp/
+modules/
+
+
+# Vim
+*.swp
+

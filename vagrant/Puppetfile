@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+forge "https://forgeapi.puppetlabs.com"
+
+mod 'puppetlabs-java'
+
+# A module from Github pre-packaged tarball
+# mod 'puppetlabs-apache', '0.6.0', :github_tarball => 'puppetlabs/puppetlabs-apache'
+mod 'immuta-cdh',
+    :git => 'https://sapanbharatshah@bitbucket.org/sapanbharatshah/puppet-cdh.git'
+

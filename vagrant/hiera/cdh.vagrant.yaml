@@ -1,0 +1,7 @@
+---
+classes:
+  - 'cdh'
+
+cdh::cluster_name: 'cdh_vagrant'
+cdh::namenode_host: 'hadoop1.cdh.vagrant'
+cdh::jobtracker_host: 'hadoop1.cdh.vagrant'

@@ -1,0 +1,8 @@
+---
+classes:
+    - 'cdh'
+
+cdh::roles:
+    - 'tasktracker'
+    - 'datanode'
+

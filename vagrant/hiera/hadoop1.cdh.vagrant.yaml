@@ -1,0 +1,10 @@
+---
+classes:
+    - 'cdh'    
+
+cdh::roles:
+    - 'namenode'
+    - 'jobtracker'
+
+cdh::dfs_rpc_bind_host: '0.0.0.0'
+cdh::dfs_servicerpc_bind_host: '0.0.0.0'
