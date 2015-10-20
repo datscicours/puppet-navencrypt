@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.hostmanager.enabled = true
     config.hostmanager.manage_host = false 
     config.hostmanager.include_offline = true
-    (1..3).each do |i|
+    (1..1).each do |i|
         host = "hadoop#{i}"
         fqdn = "#{host}.#{DOMAIN}"
         config.vm.define fqdn do |node|
@@ -27,7 +27,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
     
     config.vm.provision :puppet do |puppet|
-        puppet.module_path          = "modules"
+        puppet.module_path          = "../manifests"
         puppet.hiera_config_path    = "hiera.yaml"
     end
 end
